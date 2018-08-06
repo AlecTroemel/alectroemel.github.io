@@ -42,10 +42,6 @@ footer {
     height: 50px
 }
 
-.green {
-    color: var(--base0B);
-}
-
 a {
     text-decoration: none;
 }
@@ -73,6 +69,15 @@ a {
     background-color: var(--base08);
     color: var(--base00);
 }
+
+.green_link {
+    color: var(--base0B);
+}
+.green_link:hover {
+    background-color: var(--base0B);
+    color: var(--base00);
+}
+
 
 ul {
     list-style: none;
