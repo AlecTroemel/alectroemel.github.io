@@ -20,17 +20,17 @@
 /* id */
 #overview {
     grid-area: overview;
-    max-height: 34vh;
+    max-height: 100vh;
 }
 
 #toy {
     grid-area: toy;
-    max-height: 58vh;
+    max-height: 100vh;
 }
 
 #blog {
     grid-area: blog;
-    max-height: 58vh;
+    max-height: 100vh;
 }
 
 #footer {
@@ -54,12 +54,14 @@ body {
     align-items: stretch;
     justify-content: space-evenly;
     align-content: stretch;
-    grid-template-columns: 48vw 48vw;
-    grid-template-rows: 36vh 52vh 2vh;
+
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
     grid-template-areas:
-        "overview overview"
-        "toy blog"
-        "footer footer"
+        "overview"
+            "toy"
+            "blog"
+            "footer"
 }
 
 a {
@@ -123,29 +125,28 @@ li:before {
 }
 
 /* mobile */
-@media (max-width: 40em) {
+@media (min-width: 40em) {
     body {
-        grid-template-columns: 100%;
-        grid-template-rows: auto;
+        grid-template-columns: 48vw 48vw;
+        grid-template-rows: 36vh 52vh 2vh;
         grid-template-areas:
-            "overview"
-            "toy"
-            "blog"
-            "footer"
+            "overview overview"
+                "toy blog"
+                "footer footer"
     }
 
     #overview {
         grid-area: overview;
-        max-height: 100vh;
+        max-height: 34vh;
     }
 
     #toy {
         grid-area: toy;
-        max-height: 100vh;
+        max-height: 58vh;
     }
 
     #blog {
         grid-area: blog;
-        max-height: 100vh;
+        max-height: 58vh;
     }
 }
