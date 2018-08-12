@@ -46,10 +46,11 @@ body {
     background-color: var(--base00);
     color: var(--base07);
     font-weight: lighter;
-    margin: 1em 1.5em;
+    margin: 1vh 2vh;
 
     display: grid;
-    grid-gap: 2% 2vh;
+    grid-gap: 1vh 2vh;
+    gap: 1vh 2vh;
     justify-items: stretch;
     align-items: stretch;
     justify-content: space-evenly;
@@ -125,7 +126,7 @@ li:before {
 }
 
 /* mobile */
-@media (min-width: 40em) {
+@media only screen (min-width: 40em) {
     body {
         grid-template-columns: 48vw 48vw;
         grid-template-rows: 36vh 52vh 2vh;
