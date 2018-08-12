@@ -20,17 +20,17 @@
 /* id */
 #overview {
     grid-area: overview;
-        max-height: 34vh;
+    max-height: 34vh;
 }
 
 #toy {
     grid-area: toy;
-        max-height: 58vh;
+    max-height: 58vh;
 }
 
 #blog {
     grid-area: blog;
-        max-height: 58vh;
+    max-height: 58vh;
 }
 
 #footer {
@@ -134,7 +134,18 @@ li:before {
             "footer"
     }
 
-    .box {
+    #overview {
+        grid-area: overview;
+        max-height: 100vh;
+    }
+
+    #toy {
+        grid-area: toy;
+        max-height: 100vh;
+    }
+
+    #blog {
+        grid-area: blog;
         max-height: 100vh;
     }
 }
