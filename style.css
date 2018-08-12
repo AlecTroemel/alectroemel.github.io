@@ -123,7 +123,7 @@ li:before {
 }
 
 /* mobile */
-@media only screen and (max-width: 768px) {
+@media (max-width: 40em) {
     body {
         grid-template-columns: 100%;
         grid-template-rows: auto;
