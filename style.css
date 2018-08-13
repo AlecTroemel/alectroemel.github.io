@@ -15,7 +15,7 @@
     --base0D: #8fa1b3;
     --base0E: #b48ead;
     --base0F: #ab7967;
-
+    --current-color: #eff1f5;
     font-size: 2.5em;
 }
 
@@ -138,8 +138,8 @@ li:before {
         grid-template-rows: 36vh 52vh 2vh;
         grid-template-areas:
             "overview overview"
-                "toy blog"
-                "footer footer"
+            "toy blog"
+            "footer footer"
     }
 
     #overview {
