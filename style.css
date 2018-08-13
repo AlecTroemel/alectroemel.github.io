@@ -16,7 +16,7 @@
     --base0E: #b48ead;
     --base0F: #ab7967;
 
-    font-size: 24px;
+    font-size: 1.8em;
 }
 
 /* id */
@@ -129,7 +129,7 @@ li:before {
 /* mobile */
 @media only screen and (min-width: 992px) {
     :root {
-        font-size: 16px;
+        font-size: 1.1em;
     }
 
     body {
