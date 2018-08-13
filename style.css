@@ -15,6 +15,8 @@
     --base0D: #8fa1b3;
     --base0E: #b48ead;
     --base0F: #ab7967;
+
+    font-size: 24px;
 }
 
 /* id */
@@ -46,7 +48,7 @@ body {
     background-color: var(--base00);
     color: var(--base07);
     font-weight: lighter;
-    margin: 1vh 2vh;
+    margin: 2vh 2vw;
 
     display: grid;
     gap: 1vh 2vh;
@@ -93,7 +95,7 @@ li:before {
 .box {
     padding: 0.1em 1em;
     border-radius: 3px;
-    border-width: 1px;
+    border-width: 5px;
     border-style: solid;
     border-color: var(--base02);
     overflow: auto;
@@ -126,7 +128,12 @@ li:before {
 
 /* mobile */
 @media only screen and (min-width: 992px) {
+    :root {
+        font-size: 16px;
+    }
+
     body {
+        margin: 1vh 2vh;
         grid-template-columns: 48vw 48vw;
         grid-template-rows: 36vh 52vh 2vh;
         grid-template-areas:
@@ -148,5 +155,9 @@ li:before {
     #blog {
         grid-area: blog;
         max-height: 58vh;
+    }
+
+    .box {
+        border-width: 1px;
     }
 }
