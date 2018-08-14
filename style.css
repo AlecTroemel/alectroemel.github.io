@@ -19,6 +19,11 @@
     font-size: 2.5em;
 }
 
+@font-face {
+    font-family: source_sans;
+    src: local(source_sans), url('fonts/SourceSansPro-Light.ttf') format('opentype');
+}
+
 /* id */
 #overview {
     grid-area: overview;
@@ -44,7 +49,7 @@
 
 /* html elements  */
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: source_sans, sans-serif;
     background-color: var(--base00);
     color: var(--base07);
     font-weight: lighter;
