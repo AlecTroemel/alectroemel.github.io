@@ -3,56 +3,172 @@
     <head>
         <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
         <meta content="utf-8" http-equiv="encoding" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="style.css" rel="stylesheet" />
         <title>Alec Troemel</title>
     </head>
     <body>
-        <div class="box" id="overview">
-            <p>
-                Hi, my name is
-                <a class="green link" href="https://alectroemel.com">[Alec Troemel]</a>,
-                and you found my website. Heres some things about me.
-            </p>
-            <ul>
-                <li>
-                    Im a Christain, and this is my
-                    <a class="red link" href="http://eastview.church/home">[Church]</a>
-                </li>
-                <li>
-                    I Currently working at a cool place called
-                    <a class="orange link" href="https://mirusresearch.com/">[Mirus Research]</a>
-                </li>
-                <li>
-                    Im a software developer with experience in python, java, javascript, rust,
-                    c/c++, vue.js, meteor.js, and Kubernetes among other things. Heres my
-                    <a class="blue link" href="https://github.com/AlecTroemel">[github]</a>
-                </li>
-                <li>
-                    I write music sometimes, you can take a listen on my
-                    <a class="orange link" href="https://soundcloud.com/alectroemel">[soundcloud]</a>
-                </li>
-                <li>
-                    I really like
-                    <a class="blue link" href="http://chriskempson.com/projects/base16/">[Base16-Ocean]</a>,
-                    which I use everywhere (like this website)
-                </li>
-                <li>I use emacs, because Im not an animal</li>
-            </ul>
+        <div class="row box">
+            <div class="col">
+                <h4>Hi!</h4>
+                <p>
+                    my name is
+                    <a class="green link" href="https://alectroemel.com">[Alec Troemel]</a>,
+                    and you found my website. Heres some things about me.
+                </p>
+                <ul>
+                    <li>
+                        Im a Christain, and this is my
+                        <a class="red link" href="http://eastview.church/home">[Church]</a>
+                    </li>
+                    <li>
+                        I Currently work at a cool place called
+                        <a class="orange link" href="https://mirusresearch.com/">[Mirus Research]</a>
+                    </li>
+                    <li>
+                        Im a software developer with experience in python, java, javascript, rust,
+                        c/c++, vue.js, meteor.js, and Kubernetes among other things. Heres my
+                        <a class="blue link" href="https://github.com/AlecTroemel">[github]</a>
+                    </li>
+                    <li>
+                        I write music sometimes, you can take a listen on my
+                        <a class="orange link" href="https://soundcloud.com/alectroemel">[soundcloud]</a>
+                    </li>
+                    <li>
+                        I really like
+                        <a class="blue link" href="http://chriskempson.com/projects/base16/">[Base16-Ocean]</a>,
+                        which I use everywhere (like this website)
+                    </li>
+                    <li>I use emacs, because Im not an animal</li>
+                </ul>
+            </div>
         </div>
-        <div class="box" id="toy">
-            <h2 class="blue">Experiments</h2>
-            <p>TODO</p>
-        </div>
-        <div class="box" id="blog">
-            <h2 class="blue">Blog</h2>
-            <p>TODO</p>
-        </div>
-        <div id="footer">
-            <p>
-                <address>
-                    contact me at <a class="blue link">[alectroemel (at) hotmail (dot) com]</a>
-                </address>
-            </p>
+        <div class="box">
+            <h4>December 4, 2018: Ludum Dare 43</h4>
+            <div class="row">
+            <div class="col 1of2">
+                <p>This is my first Ludum Dare! The theme was "acrifices must be made". I used the wonderful <a class="purple link" href="https://www.lexaloffle.com/pico-8.php">[pico-8]</a>, which forced me to actually make the game instead of a game engine!
+                </p>
+                <p>
+                complete the desired sacrifices as they appear by placeing bread, coin, and pig on the alters. Make sure your offerrings are in the correct order, or they dont count. Don't let your life hit zero or your band of zealots may become the sacrifice!
+                </p>
+                <ul>
+                    <li>
+                        <a class="blue link">[left]</a>
+                        <a class="blue link">[right]</a>
+                        : move the zealots
+                    </li>
+                    <li>
+                        <a class="red link">[X]</a>
+                        : pick up a new sacrifice AND pass the items down the line
+                    </li>
+                    <li>
+                        <a class="green link">[C]</a>
+                        : pass the items down the line (without picking up a new one)
+                    </li>
+                </ul>
+            </div>
+            <div class="col 1of2">
+                <style TYPE="text/css">
+
+                canvas#canvas {
+                    width: 512px;
+                    height: 512px;
+                }
+
+                .pico8_el {
+	            float: left;
+	            width: 92px;
+	            display: inline-block;
+  	            margin: 1px;
+	            padding: 4px;
+	            text-align: center;
+	            color: var(--base07);
+	            background-color: var(--base02);
+	            font-family : verdana;
+	            font-size: 9pt;
+	            cursor: pointer;
+	            cursor: hand;
+                }
+                .pico8_el a{
+	            text-decoration: none;
+	            color: var(--base07);
+                }
+
+                .pico8_el:hover{
+	            background-color: var(--base03);
+                }
+
+                .pico8_el:link{
+	            background-color: var(--base03);
+                }
+
+                canvas{
+                    image-rendering: optimizeSpeed;
+                    image-rendering: -moz-crisp-edges;
+                    image-rendering: -webkit-optimize-contrast;
+                    image-rendering: optimize-contrast;
+                    image-rendering: pixelated;
+                    -ms-interpolation-mode: nearest-neighbor;
+                    border: 0px
+                }
+                </style>
+	        <center>
+                    <div style="width:512px;">
+	                <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" >
+                        </canvas>
+
+	                <script type="text/javascript">
+	                const canvas = document.getElementById("canvas");
+	                canvas.width = window.innerWidth;
+	                canvas.height = window.innerHeight;
+	                var Module = {};
+	                Module.canvas = canvas;
+	                </script>
+
+	                <script type="text/javascript" src="titan_ceremony.js"></script>
+
+	                <script>
+	                // key blocker. prevent cursor keys from scrolling page while playing cart.
+
+	                function onKeyDown_blocker(event) {
+	                    event = event || window.event;
+	                    let o = document.activeElement;
+	                    if (!o || o == document.body || o.tagName == "canvas") {
+	                        if ([32, 37, 38, 39, 40].indexOf(event.keyCode) > -1) {
+	                            if (event.preventDefault) event.preventDefault();
+	                        }
+	                    }
+	                }
+
+	                document.addEventListener('keydown', onKeyDown_blocker, false);
+
+	                </script>
+	                <br>
+	                <div class=pico8_el onclick="Module.pico8Reset();">
+	                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAaklEQVR4Ae2dOwoAMQhE15A+rfc/3bZ7AlMnQfywCkKsfcgMM9ZP+QHtIn0vLeBAFduiFdQ/0DmvtR5LXJ6CPSXe2ZXcFNlTxFbemKrbZPs35XogeS9xeQr+anT6LzoOwEDwZJ7jwhXUnwkTTiDQ2Ja34AAAABB0RVh0TG9kZVBORwAyMDExMDIyMeNZtsEAAAAASUVORK5CYII=" alt="Reset" width=12 height=12/>
+	                    Reset
+                        </div>
+	                <div class=pico8_el onclick="Module.pico8TogglePaused();">
+	                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAPUlEQVR4Ae3doQ0AIAxEUWABLPtPh2WCq26DwFSU/JPNT166QSu/Hg86W9dwLte+diP7AwAAAAAAgD+A+jM2ZAgo84I0PgAAABB0RVh0TG9kZVBORwAyMDExMDIyMeNZtsEAAAAASUVORK5CYII=" alt="Pause" width=12 height=12/>
+	                    Pause
+                        </div>
+	                <div class=pico8_el onclick="Module.requestFullScreen(true, false);">
+	                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAaklEQVR4Ae2dsQ1AIQhExfze1v2ns3UCrfgFhmgUUAoGgHscp21wX9BqaZoDojbB96OkDJKNcTN2BHTyYNYmoT2BlPL7BKgcPfHjAVXKKadkHOn9K1r16N0czN6a95N8mnA7Aq2fTZ3Af3UKmCSMazL8HwAAABB0RVh0TG9kZVBORwAyMDExMDIyMeNZtsEAAAAASUVORK5CYII=" alt="Fullscreen" width=12 height=12/>
+	                    Fullscreen
+                        </div>
+	                <div class=pico8_el onclick="Module.pico8ToggleSound();">
+	                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAXklEQVR4Ae2doQ4AIQxD4YLH8v9fh+ULhjpxxSwLg2uyapr1JRu1iV5Z+1BGl4+xNpX38SYo2uRvYiT5LwEmt+ocgXVLrhPEgBiw8Q5w7/kueSkK+D2tJO4E/I3GrwkqQCBabEj/4QAAABB0RVh0TG9kZVBORwAyMDExMDIyMeNZtsEAAAAASUVORK5CYII=" alt="Toggle Sound" width=12 height=12/>
+	                    Sound
+                        </div>
+	                <div class=pico8_el ><a target="_new" href="http://www.lexaloffle.com/bbs/?cat=7&sub=2">
+	                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAlElEQVR4Ae2dMQ5FQBCGh6jcwAkkateg3DiAa+iQUGqVKi95FQfAJRQOoHeBUf8JyQqKjZ1uMzuz2e/LTE3KhyF7kSlgLOykas23f6D+A9Yp84aAOYU15pcJnfji0Il2ID8HzC4y38ZrnfIBGxeRoR3c3EWrACdsV5BOsx7OSRnrOXh4F5HzA6bevwUn8wlz7eCDsQM99B3ks0s/4QAAABB0RVh0TG9kZVBORwAyMDExMDIyMeNZtsEAAAAASUVORK5CYII=" alt="More Carts" width=12 height=12/>
+	                    Carts</a>
+                        </div>
+	                <br>
+	            </div>
+                </center>
+            </div>
         </div>
     </body>
 </html>
