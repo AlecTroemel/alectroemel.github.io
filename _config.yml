@@ -1,0 +1,21 @@
+title: Alec Troemel
+email: alectroemel@hotmail.com
+description: >
+  personal website for the human being Alec Troemel
+baseurl: ""
+url: "https://alectroemel.com"
+github_username:  AlecTroemel
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

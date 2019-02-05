@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="box">
+    {{ content }}
+</div>
+
+{% include postcontent.html content=site.posts.first %}
+
+<div class="box">
+    <p>Here are some other things I've written</p>
+    <ul class="posts">
+        {% for post in site.posts %}
+        <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            <span class="postDate">{{ post.date | date: "%b %-d, %Y" }}</span>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
