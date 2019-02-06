@@ -1,0 +1,13 @@
+<div class="box">
+    <h1>
+        {% if post.title %}
+        <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
+        {% elsif page.title %}
+        <a href="{{ root_url }}{{ page.url }}">{{ page.title }}</a>
+        {% endif %}
+    </h1>
+    {{ content }}
+    {% if page.game %}
+    {% include pico8game.html content=page.game %}
+    {% endif %}
+</div>
