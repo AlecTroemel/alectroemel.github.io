@@ -7,4 +7,7 @@
         {% endif %}
     </h1>
     {{ content }}
+    {% if page.game %}
+    {% include pico8game.html content=page.game %}
+    {% endif %}
 </div>

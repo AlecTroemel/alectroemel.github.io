@@ -9,13 +9,15 @@ layout: default
     {{ content }}
 </div>
 
+{% comment %}
 <!-- the first post -->
 {% assign post = site.posts.first %}
 {% assign content = post.content %}
 {% include postcontent.html %}
+{% endcomment %}
 
 <div class="box">
-    <p>Here are some other things I've written</p>
+    <p>Here's some stuff that resembles a blog</p>
     <ul class="posts">
         {% for post in site.posts %}
         <li>
