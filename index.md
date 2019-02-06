@@ -1,5 +1,5 @@
 ---
-title: Alec Troemel
+title: About Me
 layout: homepage
 ---
 

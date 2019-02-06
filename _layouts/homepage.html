@@ -2,11 +2,18 @@
 layout: default
 ---
 
+
 <div class="box">
+    <h1 class="entry-title">
+        <a href="{{ root_url }}{{ page.url }}">{{ page.title }}</a>
+    </h1>
     {{ content }}
 </div>
 
-{% include postcontent.html content=site.posts.first %}
+
+{% assign post = site.posts.first %}
+{% assign content = post.content %}
+{% include postcontent.html %}
 
 <div class="box">
     <p>Here are some other things I've written</p>

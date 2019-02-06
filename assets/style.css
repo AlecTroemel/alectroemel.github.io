@@ -79,6 +79,11 @@ li:before {
 }
 
 a {
+    --current-color: var(--base0B);
+    color: var(--current-color);
+}
+
+h1 a {
     --current-color: var(--base0C);
     color: var(--current-color);
 }
@@ -126,7 +131,7 @@ body {
     font-family: source_sans, sans-serif;
     font-weight: lighter;
     background-color: var(--base00);
-    color: var(--base07);
+    color: var(--base05);
 }
 
 .content {
