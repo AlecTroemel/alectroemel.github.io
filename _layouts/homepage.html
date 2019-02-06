@@ -2,7 +2,6 @@
 layout: default
 ---
 
-
 <div class="box">
     <h1 class="entry-title">
         <a href="{{ root_url }}{{ page.url }}">{{ page.title }}</a>
@@ -10,7 +9,7 @@ layout: default
     {{ content }}
 </div>
 
-
+<!-- the first post -->
 {% assign post = site.posts.first %}
 {% assign content = post.content %}
 {% include postcontent.html %}
