@@ -2,7 +2,7 @@
 layout: post
 title:  "Google Cloud DNS, python, and spf records"
 date:   2019-02-27 12:08:00 -0600
-categories: python
+categories: python code
 ---
 
 ### Problem:
