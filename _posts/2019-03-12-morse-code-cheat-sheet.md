@@ -21,49 +21,49 @@ For 2019 I've set a goal of learning some new (probably useless, but at least un
 
 | Letter | Code | Helpful Phrase to Remember (Mnemonics) |
 |--------|------|----------------------------------------|
-| A      | ._   | a-PART                                 |
-| B      | _... | BOOT to the head                       |
-| C      | _._. | CO-ca CO-la                            |
-| D      | _..  | DOG did it                             |
+| A      | .-   | a-PART                                 |
+| B      | -... | BOOT to the head                       |
+| C      | -.-. | CO-ca CO-la                            |
+| D      | -..  | DOG did it                             |
 | E      | .    | eh                                     |
-| F      | .._. | fetch a FIRE man                       |
-| G      | __.  | GOO-GLE-plex                           |
+| F      | ..-. | fetch a FIRE man                       |
+| G      | --.  | GOO-GLE-plex                           |
 | H      | .... | hip-pi-ty hop                          |
 | I      | ..   | i-bid                                  |
-| J      | .___ | in JAWS JAWS JAWS                      |
-| K      | _._  | KAN-ga-ROO                             |
-| L      | ._.. | a LIGHT is lit                         |
-| M      | __   | MA-MA                                  |
-| N      | _.   | NA-vy                                  |
-| O      | ___  | ONE OF US                              |
-| P      | .__. | a PIZ-ZA pie                           |
-| Q      | __._ | GOD SAVE the QUEEN                     |
-| R      | ._.  | re-FLEC-tor                            |
+| J      | .--- | in JAWS JAWS JAWS                      |
+| K      | -.-  | KAN-ga-ROO                             |
+| L      | .-.. | a LIGHT is lit                         |
+| M      | --   | MA-MA                                  |
+| N      | -.   | NA-vy                                  |
+| O      | ---  | ONE OF US                              |
+| P      | .--. | a PIZ-ZA pie                           |
+| Q      | --.- | GOD SAVE the QUEEN                     |
+| R      | .-.  | re-FLEC-tor                            |
 | S      | ...  | si-si-si                               |
-| T      | _    | TALL                                   |
-| U      | .._  | gid-dy UP                              |
-| V      | ..._ | vic-tor-y SCREECH                      |
-| W      | .__  | the WORLD WAR                          |
-| X      | _.._ | X marks the SPOT                       |
-| Y      | _.__ | YOU'RE a COOL DUDE                     |
-| Z      | __.. | ZINC ZOO-keep-er                       |
+| T      | -    | TALL                                   |
+| U      | ..-  | gid-dy UP                              |
+| V      | ...- | vic-tor-y SCREECH                      |
+| W      | .--  | the WORLD WAR                          |
+| X      | -..- | X marks the SPOT                       |
+| Y      | -.-- | YOU'RE a COOL DUDE                     |
+| Z      | --.. | ZINC ZOO-keep-er                       |
 
 | Number | code   |
 |--------|--------|
-| 1      | .____  |
-| 2      | ..___  |
-| 3      | ...__  |
-| 4      | ...._  |
+| 1      | .----  |
+| 2      | ..---  |
+| 3      | ...--  |
+| 4      | ....-  |
 | 5      | .....  |
-| 6      | _..... |
-| 7      | __.... |
-| 8      | ___..  |
-| 9      | ____.  |
+| 6      | -..... |
+| 7      | --.... |
+| 8      | ---..  |
+| 9      | ----.  |
 
 | character | code   |
 |-----------|--------|
-| .         | ._._._ |
-| ,         | __..__ |
-| ?         | ..__.. |
-| /         | _.._.  |
-| @         | .__._. |
+| .         | .-.-.- |
+| ,         | --..-- |
+| ?         | ..--.. |
+| /         | -..-.  |
+| @         | .--.-. |
