@@ -245,10 +245,11 @@ canvas{
 
 /* table */
 table {
-    margin: 15px;
+    margin: 0px;
     padding: 15px;
     border: 1px solid var(--base03);
     border-collapse: collapse;
+    width: 100%;
 }
 
 tr, td, th {
@@ -270,5 +271,10 @@ tr, td, th {
 
     .box {
         border-width: 1px;
+    }
+
+    table {
+        width: auto;
+        margin: 15px;
     }
 }
