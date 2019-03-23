@@ -93,13 +93,6 @@
 .highlight .vm { color: var(--base08); } /* Name.Variable.Magic */
 .highlight .il { color: var(--base0C) } /* Literal.Number.Integer.Long */
 
-
-@font-face {
-    font-family: source_sans;
-    /* src: local(source_sans), url('assets/SourceSansPro-Light.ttf') format('opentype'); */
-    src: local(source_sans), url('SourceSansPro-Light.ttf') format('opentype');
-}
-
 /* Tiny flex grid system */
 .row {
     display: block;
@@ -177,7 +170,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
-    font-family: source_sans, sans-serif;
+    font-family: "Courier New", Courier, monospace;
     font-weight: lighter;
     background-color: var(--base00);
     color: var(--base05);
