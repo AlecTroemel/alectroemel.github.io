@@ -242,16 +242,25 @@ canvas{
 
 /* table */
 table {
+    text-align: left;
     margin: 0px;
     padding: 15px;
     border: 1px solid var(--base03);
     border-collapse: collapse;
-    width: 100%;
 }
 
-tr, td, th {
+td {
     padding: 10px;
-    border: 1px solid var(--base03);
+    border-top: 1px solid var(--base03);
+}
+
+tr, th {
+    padding: 20px 20px 10px 10px;
+    border: none;
+}
+
+hr {
+    color: var(--base03);
 }
 
 /* desktop size screens */
@@ -271,7 +280,8 @@ tr, td, th {
     }
 
     table {
-        width: auto;
-        margin: 15px;
+        border: none;
+        width: 100%;
+        margin: 15px 0px;
     }
 }
