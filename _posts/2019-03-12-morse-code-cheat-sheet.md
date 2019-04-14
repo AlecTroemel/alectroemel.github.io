@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Morse Code Cheat Scheet"
+title:  "Morse Code Cheat Sheet"
 date:   2019-03-12 12:08:00 -0600
 categories: hobbies
 ---
