@@ -159,6 +159,10 @@ img {
 box-shadow: 0px 4px 16px 0px rgba(30,33,38,1);
 }
 
+strong {
+    font-weight: 700;
+}
+
 a {
     text-decoration: none;
 }
