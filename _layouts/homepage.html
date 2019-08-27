@@ -3,35 +3,33 @@ layout: default
 ---
 
 <div class="box">
-    <h1 class="entry-title">
-        <a href="{{ root_url }}{{ page.url }}">{{ page.title }}</a>
-    </h1>
-    {{ content }}
+  <h1 class="entry-title">
+    <a href="{{ root_url }}{{ page.url }}">{{ page.title }}</a>
+  </h1>
+  {{ content }}
 </div>
 
 {% comment %}
 <!-- the first post -->
-{% assign post = site.posts.first %}
-{% assign content = post.content %}
-{% include postcontent.html %}
-{% endcomment %}
+{% assign post = site.posts.first %} {% assign content = post.content %} {%
+include postcontent.html %} {% endcomment %}
 
 <div class="box">
-    <p>Here's some stuff that resembles a blog</p>
-    <ul class="posts">
-        {% for post in site.posts %}
-        <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-            <span class="postDate">{{ post.date | date: "%b %-d, %Y" }}</span>
-        </li>
-        {% endfor %}
-    </ul>
+  <p>Here's some stuff that resembles a blog</p>
+  <ul class="posts">
+    {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <span class="postDate">{{ post.date | date: "%b %-d, %Y" }}</span>
+    </li>
+    {% endfor %}
+  </ul>
 </div>
 
 <div class="box">
-    <p>Here are some people cooler than me</p>
-    <ul>
-        <li><a href="https://vingiesel.net/">Evan Giesel</a></li>
-        <li><a href="http://johnmarkbeaty.com/">Johnmark Beaty</a></li>
-    </ul>
+  <p>Here's some people that resemble friends</p>
+  <ul>
+    <li><a href="https://vingiesel.net/">Evan Giesel</a></li>
+    <li><a href="http://johnmarkbeaty.com/">Johnmark Beaty</a></li>
+  </ul>
 </div>
