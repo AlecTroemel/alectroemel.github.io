@@ -3,10 +3,14 @@ layout: post
 title:  "Analysis: Wandersong"
 date:   2020-03-04 12:00:00 -0600
 categories: games analysis
+excerpt_separator: <!--more-->
 ---
-I love game design. Playing games is fun yes, but watching a Youtube video essay picking apart some games decision or design is even better. I also want to create and design my own games. So I'm going to start writing down some of my own thoughts on games I've played and think are worth exploring. These will be more like ramblings then formal essays, so sorry about that. First up is the game...
 
-![wandersong_title](/assets/images/wandersong.jpg)
+I love game design. Playing games is fun yes, but watching a Youtube video essay picking apart some games decision or design is even better. I also want to create and design my own games. So I'm going to start writing down some of my own thoughts on games I've played and think are worth exploring. These will be more like ramblings then formal essays, so sorry about that. First up is...
+
+<!--more-->
+
+![wandersong](/assets/images/wandersong.jpg)
 
 I just started reading "the Art of Dramatic Writing" by Lajos Egri. It main focus is on writing plays, but I think his thoughts apply to any sort of story. (I hope that continues to be the case in future chapters, because I don't actually really care about theater). In its first chapter he talks about every play/story needs a central theme or Premise. Romeo and Juliet's premise is "great love defies even death", King Lear's is "Blind trust leads to destruction", Macbeth: "Ruthless ambition leads to destruction", Othello: "Jealousy leads to destruction"... the guy really likes tragedies. If I had to pick a theme/premise for Wandersong, it would be "The world needs Compassion, not violence".
 
