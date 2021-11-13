@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="box">
+  <p>Hi!</p>
+
+  <p>my name is <a href="https://alectroemel.com/">Alec Troemel</a>, and you found my website. Here’s some things about me.</p>
+
+  <ul>
+    <li>Im a Christain, and this is my <a href="http://eastview.church/home">Church</a></li>
+    <li>I Currently work at a cool place called <a href="https://mirus.io/">Mirus Research</a></li>
+    <li>Im a software developer with experience in python, java, javascript, rust, c/c++, vue.js, meteor.js, and Kubernetes among other things. Here’s my <a href="https://github.com/AlecTroemel">github</a></li>
+    <li>I write music sometimes, you can take a listen on my <a href="https://soundcloud.com/alectroemel">soundcloud</a></li>
+    <li>I really like <a href="http://chriskempson.com/projects/base16/">Base16-Ocean</a>, which I use everywhere (like this website)</li>
+    <li>I use emacs, because I’m not an animal</li>
+  </ul>
+</div>
+
+<div class="box">
+  <p> here's some stuff that resembles a blog. </p>
+
+  <ul class="posts">
+    {% for post in posts %}
+    <li class="post-title">
+      <a href="{{ url_for("posts", slug=post.slug) }}">
+        {% if post.date is defined %}
+        {{ post.date|strftime("%b %d, %Y") }} &mdash;
+        {% endif %}
+        {{ post.title }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}
